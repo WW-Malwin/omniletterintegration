@@ -1,0 +1,17 @@
+<h2>Omniletter Synchronization Logs</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Nachricht</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for log in logs %}
+        <tr>
+            <td>{{ log.date }}</td>
+            <td>{{ log.message }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

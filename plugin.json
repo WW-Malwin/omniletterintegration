@@ -1,0 +1,32 @@
+{
+    "name": "Omniletter Integration",
+    "description": "Integrates Omniletter with Plentymarkets.",
+    "author": "Your Name",
+    "serviceProvider": "OmniletterIntegration\\Providers\\OmniletterServiceProvider",
+    "controllers": {
+        "MainController": "OmniletterIntegration\\Controllers\\MainController"
+    },
+    "routes": [
+        {
+            "method": "GET",
+            "route": "/omniletterintegration/config",
+            "controller": "MainController@showConfig"
+        },
+        {
+            "method": "POST",
+            "route": "/omniletterintegration/saveConfig",
+            "controller": "MainController@saveConfig"
+        },
+        {
+            "method": "POST",
+            "route": "/omniletterintegration/sync",
+            "controller": "MainController@syncCustomers"
+        },
+        {
+            "method": "GET",
+            "route": "/omniletterintegration/logs",
+            "controller": "MainController@showLogs"
+        }
+    ],
+    "version": "1.0.0"
+}

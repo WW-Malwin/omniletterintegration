@@ -1,0 +1,10 @@
+<h2>Omniletter Integration Configuration</h2>
+<form method="post" action="/omniletterintegration/saveConfig">
+    <label for="apiKey">API Key:</label>
+    <input type="text" id="apiKey" name="apiKey" value="{{ config.apiKey }}" required>
+    <br>
+    <label for="apiSecret">API Secret:</label>
+    <input type="text" id="apiSecret" name="apiSecret" value="{{ config.apiSecret }}" required>
+    <br>
+    <button type="submit">Save</button>
+</form>
